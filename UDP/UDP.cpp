@@ -24,8 +24,11 @@ UDP::UDP()
 	}
 	std::cout << "Attached to JVM" << std::endl;
 
+	std::cout << "Befire MC" << std::endl;
 	//Get the Minecraft instance
-	Minecraft * mc = new Minecraft(this);
+	Minecraft * mc = new Minecraft(this); //Evertything before this line is executed fine, But it all crashes here https://i.imgur.com/f5mS46e.png
+	
+	std::cout << "After MC" << std::endl;
 
 	// Infininte loop, very error-prone but good enough for the purpose of showiing that it works.
 	//
